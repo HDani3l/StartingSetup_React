@@ -32,8 +32,41 @@
   background-color: #40005d;
   border: 1px solid white;
   padding: 0.5rem;
+  align-items: center;
   border-radius: 12px;
 }
+.expense-item__close { 
+  background: none!important;
+  border: none;
+  position: relative;
+  margin: 0rem 1rem;
+  display: flex;
+
+  padding: 0.75rem;
+  opacity: 0.3;
+  align-items: center;
+
+
+}
+.expense-item__close:hover {
+  opacity: 1;
+}
+.expense-item__close:before,.expense-item__close:after {
+
+ position: absolute;
+ left: 15px;
+  content: '';
+  height: 45px;
+  width: 7px;
+  background-color: rgb(238, 10, 10);
+}
+.expense-item__close:before {
+  transform: rotate(45deg);
+}
+.expense-item__close:after {
+  transform: rotate(-45deg);
+}
+
 
 @media (min-width: 580px) {
   .expense-item__description {

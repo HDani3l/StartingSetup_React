@@ -1,4 +1,6 @@
 .new-expense {
+  position: sticky;
+  top: 0;
     background-color: #a892ee;
     padding: 1rem;
     margin: 2rem auto;
